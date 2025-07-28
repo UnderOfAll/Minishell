@@ -1,39 +1,38 @@
 
 # Minishell
 
-Projeto desenvolvido como parte do currículo da 42 Lisboa.
+Project developed as part of the 42 Lisboa curriculum.
 
-## 🧠 Objetivo
+## 🧠 Objective
 
-Criar um shell funcional do zero, com comportamento similar ao bash, incluindo execução de comandos, redirecionamentos, pipes, variáveis de ambiente e comandos built-in.
+Implement a basic shell from scratch that replicates core Unix shell behaviors, including command execution, redirections, pipes, environment variables, and built-in commands.
 
-## 🔧 Funcionalidades
+## 🔧 Features
 
-- Execução de comandos externos (como `ls`, `grep`, `cat`, etc.)
-- Comandos built-in: `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`
-- Redirecionamentos: `>`, `>>`, `<`, `<<` (heredoc)
-- Pipes entre comandos (`ls | grep x`)
-- Variáveis de ambiente (`$PATH`, `$USER`, etc.)
-- Expansão de variáveis dentro de strings
-- Parsing com suporte a aspas simples/dobras
-- Tratamento de sinais (Ctrl+C, Ctrl+\)
-- Gerenciamento de processos com `fork`, `execve`, `waitpid`
+- Execution of external commands (e.g., `ls`, `grep`, `cat`, etc.)
+- Built-in commands: `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`
+- Redirections: `>`, `>>`, `<`, `<<` (heredoc)
+- Piping between commands (`ls | grep something`)
+- Environment variable expansion (`$PATH`, `$USER`, etc.)
+- Parsing with support for single and double quotes
+- Signal handling (`Ctrl+C`, `Ctrl+\`)
+- Process management using `fork`, `execve`, `waitpid`
 
-## 🛠️ Como compilar
+## 🛠️ How to Compile
 
 ```bash
 make
 ```
 
-## ▶️ Como usar
+## ▶️ How to Use
 
 ```bash
 ./minishell
 ```
 
-Depois disso, o shell está pronto para receber comandos.
+The shell will be ready to accept commands.
 
-## 🧪 Exemplo
+## 🧪 Example
 
 ```bash
 $ echo Hello World
@@ -46,16 +45,16 @@ $ echo $USER
 Kayki
 ```
 
-## 📚 O que aprendi
+## 📚 What I Learned
 
-- Execução de programas com `fork`, `execve`
-- Manipulação de arquivos e redirecionamento com `dup2`
-- Parsing de strings e lógica de separação de tokens
-- Funcionamento e comunicação de sinais entre os processos
-- Gerenciamento de memória e organização modular de código em C
-- Como funciona um shell real "por dentro"
+- Process management with `fork`, `execve`
+- File redirection using `dup2`
+- String parsing and tokenization logic
+- Signals management through processes
+- Memory management and modular C design
+- A deeper understanding of how Unix shells work internally
 
-## 🧑‍💻 Feito por
+## 🧑‍💻 Author
 
-[Kayki Rocha](https://github.com/UnderOfAll) – Estudante da 42 Lisboa
-[Laher Maciel](https://github.com/LaherMaciel) - Estudante da 42 Lisboa
+[Kayki Rocha](https://github.com/UnderOfAll) – 42 Lisboa Student
+[Laher Maciel](https://github.com/LaherMaciel) - 42 Lisboa Student
