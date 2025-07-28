@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   env_export_aux.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: karocha- <karocha-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 18:40:42 by lawences          #+#    #+#             */
-/*   Updated: 2025/07/21 18:43:02 by marvin           ###   ########.fr       */
+/*   Updated: 2025/07/28 14:28:17 by karocha-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ t_export	*update_var(t_export *env, char *name, char *value)
 			free(name);
 			return (env);
 		}
+		if (ft_strcmp(env->var_name[i], name) == 0 && value == NULL)
+			return (env);
 		i++;
 	}
 	return (NULL);
