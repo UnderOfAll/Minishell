@@ -51,6 +51,7 @@ Kayki
 - Execução de programas com `fork`, `execve`
 - Manipulação de arquivos e redirecionamento com `dup2`
 - Parsing de strings e lógica de separação de tokens
+- Funcionamento e comunicação de sinais entre os processos
 - Gerenciamento de memória e organização modular de código em C
 - Como funciona um shell real "por dentro"
 
